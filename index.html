@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Showroom med Henrik</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/reveal.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/theme/solarized.css" id="theme">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/head.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/notes/notes.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/js/reveal.min.js"></script>
+    <style>
+      .map {
+        line-height: 1em;
+        letter-spacing: 0;
+      }
+      #map {
+        height: 500px;
+      }
+      #map img {
+        max-width: none;
+        max-height: none;
+      }
+      .family img {
+        border: none !important;
+        box-shadow: 0 15px 40px rgba(0,0,0,.3) !important;
+        max-height: 600px;
+      }
+      .freelance img {
+        max-height: 600px;
+      }
+      .safari {
+        background-size: contain !important;
+        background: url(./res/safari.png) top left;
+        float: left;
+        height: 290px;
+        margin-left: 148px !important;
+        padding-top: 17px !important;
+        width: 512px;
+      }
+      iframe {
+        -webkit-transform: scale(.5);
+        -webkit-transform-origin: 0 0;
+        width: 200%;
+        height: 200%;
+      }
+      .zedge h1 {
+        color: rgb(238,232,213);
+      }
+      .iphone {
+        background-size: contain !important;
+        background: url(./res/iphone.png) top left;
+        float: left;
+        width: 127px;
+        height: 215px;
+        margin-left: 1em !important;
+        padding: 46px 12px 50px 12px !important;
+      }
+      .iphone iframe {
+        height: 438px;
+      }
+      hr {
+        border: none;
+        margin-bottom: 3em;
+        margin-top: 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section data-markdown data-notes="^Note:">
+          <script type="text/template">
+            # Showroom med Henrik
+            Datanerd og stolt av det
+
+            ***
+
+            - mustasj edition
+
+            Note:
+            - lavbudsjett talkshow
+            - Alle må være koplet til CX-WLAN
+          </script>
+        </section>
+
+        <section data-markdown data-state="family">
+          <script type="text/template">
+            ### Familien min
+            ![Familie](./res/familie.jpeg)
+          </script>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              # Utdanning
+              - Elektro grunnkurs (Raufoss) <!-- .element: class="fragment" data-fragment-index="1" -->
+              - Tegning / form / farge (Lillehammer) <!-- .element: class="fragment" data-fragment-index="2" -->
+              - 3d-animasjon (Tønsberg) <!-- .element: class="fragment" data-fragment-index="3" -->
+            </script>
+          </section>
+          <section>
+            <video class="stretch" data-autoplay src="./res/oslo.mov"></video>
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              # Garden
+
+              Note:
+              Har med gardisten
+            </script>
+          </section>
+        </section>
+
+        <section data-state="map">
+          <h1>... Trondheim</h1>
+          <div id="map"></div>
+        </section>
+
+        <section data-state="freelance">
+          <section data-background="./res/take.png">
+            <video data-autoplay src="./res/mixed-tape.mov"></video>
+          </section>
+          <section data-markdown>
+            - 3b
+            - Akribi
+            - Bilmax
+            - Elvebakken barnehage
+            - High energy
+            - Kill bill
+            - Northern Biolabs
+            - Reimers
+            - Rekrutteringsagenten
+          </section>
+          <section data-markdown>
+            - Riis bilglass
+            - Samhold slip
+            - Sande hus & hytter
+            - Stein og hage a.s
+            - Storåsfestivalen
+            - Trondheim Bugser a.s
+            - Villmarken kaller
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ![reimers](./res/reimers.png)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ![3b](./res/3b.jpg)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ![Trondheim Bugser](./res/bugser.jpg)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ![Elvebakken](./res/elvebakken.jpg)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ![Riis bilglass](./res/riis.jpg)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ![Sande hus & hytter](./res/sande.jpg)
+            </script>
+          </section>
+        </section>
+
+        <section data-state="zedge" data-transition="fade" data-background="rgb(0,43,54)">
+          <h1>Zedge</h1>
+          <div class="safari">
+            <iframe src="http://zedge.net/" class="stretch"></iframe>
+          </div>
+          <div class="iphone">
+            <iframe src="http://touch.zedge.net/" class="stretch"></iframe>
+          </div>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            # Cargosafe
+          </script>
+        </section>
+
+        <section data-markdown data-notes="^Note:">
+          <script type="text/template">
+            # Fritid
+
+            - Terminal-holylight <!-- .element: class="fragment" data-fragment-index="1" -->
+            - Ntask <!-- .element: class="fragment" data-fragment-index="2" -->
+            - Emergency-numbers <!-- .element: class="fragment" data-fragment-index="3" -->
+            - Bryllup <!-- .element: class="fragment" data-fragment-index="4" -->
+            - Trening <!-- .element: class="fragment" data-fragment-index="5" -->
+            - Sandkasse <!-- .element: class="fragment" data-fragment-index="6" -->
+            - Puslespill <!-- .element: class="fragment" data-fragment-index="7" -->
+            - Disse <!-- .element: class="fragment" data-fragment-index="8" -->
+
+            Note:
+            You name it!
+            Gleder meg særskilt til neste år for
+            da blir det sikkert perling og Barbie
+            Og alt annet som ei jente på snart to begjærer
+          </script>
+        </section>
+
+        <section>
+          <h1>Takk for meg!</h1>
+        </section>
+
+        <section data-state="poll">
+          <h2 id="nice">Nice: 0</h2>
+          <h2 id="crap">Crap: 0</h2>
+          <br><br>
+          <a href="http://ow.ly/E62hT">http://ow.ly/E62hT</a>
+        </section>
+
+      </div>
+    </div>
+
+    <script>
+
+      /**
+       * Reveal.
+       */
+
+      Reveal.initialize({
+        dependencies: [
+          { src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad() } },
+          { src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ) } },
+          { src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
+        ]
+      });
+      Reveal.addEventListener('poll', initializePoll);
+      Reveal.addEventListener('map', initializeMap);
+
+      /**
+       * Map of Trondheim.
+       */
+
+      function initializeMap() {
+          var mapOptions = {
+              zoom: 11,
+              center: new google.maps.LatLng(63.4305149, 10.3950528),
+              disableDefaultUI: true,
+              styles: [{"featureType":"administrative","stylers":[{"visibility":"off"}]},{"featureType":"poi","stylers":[{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"water","stylers":[{"visibility":"simplified"}]},{"featureType":"transit","stylers":[{"visibility":"simplified"}]},{"featureType":"landscape","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"visibility":"off"}]},{"featureType":"road.local","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"water","stylers":[{"color":"#84afa3"},{"lightness":52}]},{"stylers":[{"saturation":-17},{"gamma":0.36}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"color":"#3f518c"}]}]
+          };
+          var mapElement = document.querySelector('#map');
+          var map = new google.maps.Map(mapElement, mapOptions);
+      }
+
+      /**
+       * Real-time poll.
+       */
+
+      function initializePoll() {
+
+        // WebSockets
+        var names = [];
+        var ws;
+        var name;
+        var pro = 0;
+        var neg = 0;
+
+        var nice = document.querySelector('#nice');
+        var crap = document.querySelector('#crap');
+
+        if ('WebSocket' in window) {
+          ws = new WebSocket('ws://148ee19e.ngrok.com/');
+
+          ws.onopen = function(){
+            ws.send('Hi! I am results');
+            console.log('connection opened');
+          };
+
+          ws.onmessage = function(event){
+            var str = event.data;
+            if (str.match(/^[\w]+\:[\s]+[\w]+$/)){
+              str = str.split(':');
+              var user = trim(str.shift());
+              var val = trim(str.pop());
+              if (names.indexOf(user) === -1) {
+                names.push(user);
+                if (val === 'true') { pro++; }
+                else { neg++; }
+                nice.innerText = 'Nice: '+pro;
+                crap.innerText = 'Crap: '+neg;
+              }
+            }
+          };
+        }
+        else {
+          swal('Nettleseren din støtter ikke WebSockets', 'error');
+        }
+
+        function trim(str){
+          return str.replace(/^[\s]+/, '').replace(/[\s]+$/, '')
+        }
+      }
+
+    </script>
+
+  </body>
+</html>
